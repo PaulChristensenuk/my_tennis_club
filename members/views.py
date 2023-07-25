@@ -11,7 +11,7 @@ def displayImage(request):#defines the funtion display image and takes in reques
 
 
 def importFromCSV(request):
-    dataframe = pd.read_csv('.\\data\\Whiskeyhunter.csv', encoding='latin1')  # Reads the CSV file 'Whiskeyhunter.csv' and stores the data in a Pandas DataFrame
+    dataframe = pd.read_csv('/home/ubuntu/my_tennis_club/members/data/Whiskeyhunter.csv', encoding='latin1')  # Reads the CSV file 'Whiskeyhunter.csv' and stores the data in a Pandas DataFrame
     #dataframe = dataframe.tail(-1)
 
     for d in range(len(dataframe)): 
