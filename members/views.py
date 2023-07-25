@@ -25,7 +25,7 @@ def importFromCSV(request):
         drink.all_auctions_lots_count = dataframe.iloc[d]['all_auctions_lots_count']
         drink.auction_name = dataframe.iloc[d]['auction_name']
         drink.auction_slug = dataframe.iloc[d]['auction_slug']
-        #drink.save()
+        drink.save()
 
     return HttpResponse('Data imported successfully')
 
